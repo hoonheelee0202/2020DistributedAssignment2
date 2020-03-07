@@ -20,13 +20,24 @@
      3. brokerrecord
         -- create table brokerrecord(publisher_port varchar(10), broker_address varchar(100), topic varchar(100), contents varchar(1000), start_time timestamp, elapsed_time FLOAT(20,10));
 
-**1. Publisher to Subscribers using Broker (i.e. 3 Subscribers and 1 Publisher)**
+**1. Zookeeper tasks
+ Start Zookeeper
+ - $ zkServer.sh start
+ Connect to Zookeeper
+ - $ zkCli.sh
+ delete 'broker' node if exists
+ - [zk: localhost:2181(CONNECTED) 0] deleteall /broker
+ 
+**1. Publisher to Subscribers using Broker **
 * broker's IP address and Port number are required
- - $ python broker.py
- - $ python3 sub.py I 127.0.1.1 5559
- - $ python3 sub.py I 127.0.1.1 5559
- - $ python3 sub.py I 127.0.1.1 5559
- - $ python3 pub.py I 127.0.1.1 5559 Y
+ - $ python3 broker.py broker0 5559
+     - broker0 : zookeeper node name
+     - 5559 : port number of this broker
+ - $ python3 sub.py I
+     - I : Indirect communication (Using Broker)
+ - $ python3 pub.py I Y
+     - I : Indirect communication (Using Broker)
+     - Y : Automatic execution (if 'N': you can put in the topic and contents yourself)
 
 **2. Directly from Publisher to Subscribers (i.e. 3 Subscribers and 1 Publisher)**
 * broker's IP address and Port number are required
