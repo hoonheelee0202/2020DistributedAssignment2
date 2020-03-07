@@ -60,6 +60,15 @@
  - $ python3 pub.py D Y
      - D : Direct communication between subscriber and publisher
      - Y : Automatic execution (if 'N': you can put in the topic and contents yourself)
+     
+** How to use command generator(pubsubgen.py)
+$ python3 pubsubgen.py I 5 10 20 Y
+  - I : Indirect communication (Using Broker), if 'D' Direct communication
+  - 5 : # of brokers
+  - 10 : # of publishers
+  - 20 : # of subscribers
+  - Y : Publisher Automatic execution (if 'N': you can put in the topic and contents yourself)
+  --> Output : broker_command.txt, publisher_command.txt, subscriber_command.txt
  
  
  ## Testing Environment
