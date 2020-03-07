@@ -11,13 +11,14 @@
   - user information : ID - 'lhh@localhost', PW - '1234'
   - Database Name : pubsub
   - Table Information
-     publisher(topic varchar(100), socket_id varchar(100))
-
+     1. publisher
         -- create table publisher(topic varchar(100), socket_id varchar(100));
         
-     subscriber(topic varchar(100), socket_id varchar(100))
-     
+     2. subscriber
         -- create table subscriber(topic varchar(100), socket_id varchar(100));
+  
+     3. brokerrecord
+        -- create table brokerrecord(publisher_port varchar(10), broker_address varchar(100), topic varchar(100), contents varchar(1000), start_time timestamp, elapsed_time FLOAT(20,10));
 
 **1. Publisher to Subscribers using Broker (i.e. 3 Subscribers and 1 Publisher)**
 * broker's IP address and Port number are required
