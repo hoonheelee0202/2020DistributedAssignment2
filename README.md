@@ -68,6 +68,9 @@
   ![Topology](Topology.png)
   
  ## Time measurement
+ 
+ We could get almost the same result as that of assignment #1
+ 
  * Broker Communication
 ![TimeMeasurement](TimeMeasurement1.png)
 
