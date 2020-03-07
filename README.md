@@ -22,6 +22,7 @@
 
 
 **1. Zookeeper tasks**
+ 
  Start Zookeeper
  - $ zkServer.sh start
  Connect to Zookeeper
@@ -30,7 +31,8 @@
  - [zk: localhost:2181(CONNECTED) 0] deleteall /broker
  
  
-**2. Publisher to Subscribers using Broker **
+**2. Publisher to Subscribers using Broker**
+
 * broker's IP address and Port number are required
  Execute the Broker
  - $ python3 broker.py broker0 5559
@@ -45,7 +47,8 @@
      - Y : Automatic execution (if 'N': you can put in the topic and contents yourself)
 
 
-**3. Directly from Publisher to Subscribers **
+**3. Directly from Publisher to Subscribers**
+
  Execute the Broker
  - $ python3 broker.py broker0 5559
      - broker0 : zookeeper node name
@@ -60,5 +63,6 @@
  
  
  ## Testing Environment
+ 
   - Minimal 3 client Topology
   ![Topology](Topology.png)
