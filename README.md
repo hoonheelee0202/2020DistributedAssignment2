@@ -31,7 +31,7 @@
  - [zk: localhost:2181(CONNECTED) 0] deleteall /broker
  
  
-**2. Publisher to Subscribers using Broker**
+**2-1. Publisher to Subscribers using Broker**
 
 * broker's IP address and Port number are required
  Execute the Broker
@@ -47,7 +47,7 @@
      - Y : Automatic execution (if 'N': you can put in the topic and contents yourself)
 
 
-**3. Directly from Publisher to Subscribers**
+**2-2. Directly from Publisher to Subscribers**
 
  Execute the Broker
  - $ python3 broker.py broker0 5559
