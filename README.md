@@ -75,6 +75,8 @@ $ python3 pubsubgen.py I 5 10 20 Y
  
   - Minimal 3 client Topology
   ![Topology](Topology.png)
+  * You can make your own topology and execute this program
+  
   
  ## Time measurement
  
