@@ -30,22 +30,30 @@
  
 **1. Publisher to Subscribers using Broker **
 * broker's IP address and Port number are required
+ Execute the Broker
  - $ python3 broker.py broker0 5559
      - broker0 : zookeeper node name
      - 5559 : port number of this broker
+ Execute the Subscriber
  - $ python3 sub.py I
      - I : Indirect communication (Using Broker)
+ Execute the Publisher
  - $ python3 pub.py I Y
      - I : Indirect communication (Using Broker)
      - Y : Automatic execution (if 'N': you can put in the topic and contents yourself)
 
-**2. Directly from Publisher to Subscribers (i.e. 3 Subscribers and 1 Publisher)**
-* broker's IP address and Port number are required
- - $ python broker.py
- - $ python sub.py D 127.0.1.1 5559 N
- - $ python sub.py D 127.0.1.1 5559 N
- - $ python sub.py D 127.0.1.1 5559 N
- - $ python pub.py D 127.0.1.1 5559 N
+**2. Directly from Publisher to Subscribers **
+ Execute the Broker
+ - $ python3 broker.py broker0 5559
+     - broker0 : zookeeper node name
+     - 5559 : port number of this broker
+ Execute the Subscriber
+ - $ python3 sub.py D
+     - D : Direct communication between subscriber and publisher
+ Execute the Publisher
+ - $ python3 pub.py D Y
+     - D : Direct communication between subscriber and publisher
+     - Y : Automatic execution (if 'N': you can put in the topic and contents yourself)
  
  
  ## Testing Environment
