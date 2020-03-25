@@ -71,25 +71,25 @@ $ python3 pubsubgen.py I 5 10 20 Y
   --> Output : broker_command.txt, publisher_command.txt, subscriber_command.txt
  
  ## Demo Screenshots
-  1. Broker starts
+  1. Broker starts : start 2 brokers
  ![Broker starts](1.png)
  
-  2. Subscribers start
+  2. Subscribers start : start 2 subscribers
   ![Subscribers start](2.png)
   
-  3. Publisher starts 
+  3. Publisher starts : start 1 publisher
   ![Publisher start](3.png)
   
-  4. publisher publishes
+  4. publisher publishes : publisher send a content
   ![Publisher published](4.png)
   
-  5. Broker die1/3
+  5. Broker die1/3 : Zookeeper notification 
   ![Broker die1](5.png)
   
-    6. Broker die2/3
+    6. Broker die2/3 : Zookeeper leader change
   ![Broker die2](6.png)
   
-    5. Broker die3/3
+    5. Broker die3/3 : different broker starts working(evidenced by the DB transaction record)
   ![Broker die3](7.png)
   
  
