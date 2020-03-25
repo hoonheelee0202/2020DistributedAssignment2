@@ -70,6 +70,29 @@ $ python3 pubsubgen.py I 5 10 20 Y
   - Y : Publisher Automatic execution (if 'N': you can put in the topic and contents yourself)
   --> Output : broker_command.txt, publisher_command.txt, subscriber_command.txt
  
+ ## Demo Screenshots
+  1. Broker starts
+ ![Broker starts](1.png)
+ 
+  2. Subscribers start
+  ![Subscribers start](2.png)
+  
+  3. Publisher starts 
+  ![Publisher start](3.png)
+  
+  4. publisher publishes
+  ![Publisher published](4.png)
+  
+  5. Broker die1/3
+  ![Broker die1](5.png)
+  
+    6. Broker die2/3
+  ![Broker die2](6.png)
+  
+    5. Broker die3/3
+  ![Broker die3](7.png)
+  
+ 
  
  ## Testing Environment
  
